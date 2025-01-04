@@ -1,7 +1,7 @@
 // import Image from "next/image";
 // import styles from "./page.module.css";
 
-import {Navbar} from "../comps/navbar"
+import {Navbar} from "../comps/Navbar"
 
 export default function Home() {
   return (
