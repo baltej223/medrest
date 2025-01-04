@@ -33,7 +33,7 @@ export function Navbar() {
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className="text-sm font-medium transition-colors hover:text-primary"
+                                className="text-sm font-medium transition-colors text-gray-400 hover:text-white"
                             >
                                 {item.name}
                             </Link>
@@ -41,7 +41,7 @@ export function Navbar() {
                     </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                    <Button className="hidden md:flex bg-gray-900">New Appointment</Button>
+                    <Button className="hidden md:flex bg-gray-900 hover:bg-black">New Appointment</Button>
                     <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetTrigger asChild>
                             <Button variant="ghost"
