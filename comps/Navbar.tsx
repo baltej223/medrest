@@ -14,10 +14,10 @@ import {
 import { Separator } from "@/components/ui/separator"
 
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Contact", href: "/contact" },
+  { name: "Dashboard", href: "/" },
+  { name: "IPD", href: "/ipd" },
+  { name: "Appointments", href: "/appointments" },
+  { name: "Inventory", href: "/inventory" },
 ]
 
 export function Navbar() {

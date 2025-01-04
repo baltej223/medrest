@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.mainContent{
+  margin-left: calc(30vh/2);
+  margin-right: calc(30vh/2);
+  margin-top: 10px;
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
