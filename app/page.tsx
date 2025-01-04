@@ -1,9 +1,14 @@
-import {Navbar} from "../comps/Navbar"
+// import Image from "next/image";
+// import styles from "./page.module.css";
+
+import {Navbar} from "../comps/navbar"
 
 export default function Home() {
   return (
-    <div className="w-full h-screen">
+  <>
+    <div className="content w-full h-screen">
       <Navbar/>
     </div>
+  </>  
   );
 }
