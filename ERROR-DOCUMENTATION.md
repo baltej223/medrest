@@ -1,7 +1,7 @@
 # Documenting Errors, How those were cleared and Learning from them
 
 ## Error1:
- - When converting from vite to next.js, Navbar component failed to render conrrectly as tailwind was working correctly
+ - When converting from vite to next.js, Navbar component failed to render correctly as tailwind wasn't working correctly.
 - The main reason was tailwind.config.js, which was
 ```
 /** @type {import('tailwindcss').Config} */
@@ -25,8 +25,8 @@ module.exports = {
   plugins: [require("tailwindcss-animate")],
 }
 ```
-- And navbar component was in @/comps folder with src-url : @/comps/navbar.tsx 
-- If we see in tailwind.config.js, in module.export.content its defined to use tailwind at folder which start from app, page and component. But navbar conponent was in @/comps folder where tailwind was never made to run
+- And navbar component was in @/comps folder with src-url : @/comps/navbar.tsx .
+- If we see in tailwind.config.js, in module.export.content its defined to use tailwind at folder which start from app, page and component. But navbar conponent was in @/comps folder where tailwind was never made to work
 - Due to this Navbar wasn't rendering correctly. 
 **Fixing it**:
 - I changed tailwind.config.js to also make tailwind run at @/comps folder by doing to following changes at tailwind.config.js
