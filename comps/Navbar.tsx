@@ -41,7 +41,7 @@ export function Navbar() {
                     </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                    <Button className="hidden md:flex bg-gray-900 hover:bg-black">New Appointment</Button>
+                    <Button className="hidden md:flex bg-white text-black hover:bg-black hover:text-white">New Appointment</Button>
                     <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetTrigger asChild>
                             <Button variant="ghost"
